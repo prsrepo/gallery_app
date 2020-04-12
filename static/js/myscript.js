@@ -141,6 +141,9 @@ $(document).on("click", '#popImage', function(){
 });
 
 $(document).ready(function() {
-    $("#lightgallery").lightGallery(); 
+    $("#lightgallery").lightGallery({
+      thumbnail:true,
+      pager: true
+    }); 
 });
 
