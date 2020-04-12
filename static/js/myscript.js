@@ -140,7 +140,7 @@ $(document).on("click", '#popImage', function(){
     $('#imagemodal').modal('show');
 });
 
-// $('#popImage').on('click', function() {
-// 			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-// 			$('#imagemodal').modal('show');
-// 		});
+$(document).ready(function() {
+    $("#lightgallery").lightGallery(); 
+});
+

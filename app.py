@@ -152,7 +152,6 @@ def upload_gallery_photo(gallery_name):
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('gallery', gallery_name=gallery_name))
 
-
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
